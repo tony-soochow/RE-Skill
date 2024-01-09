@@ -9,7 +9,7 @@ pip3 install -r requirements.txt
 
 ## Pretain for primitive skills
 ```shell
-python3 main.py --mem_size=1000000 --env_name="Hopper-v3" --interval=100 --do_train --n_skills=50
+python3 main.py --mem_size=1000000 --env_name="HalfCheetah-v3" --interval=100 --do_train --n_skills=50
 ```
 ## Skill clustering
 First, create a folder named 'features'
