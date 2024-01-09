@@ -20,5 +20,5 @@ python skill_cluster.py
 First, create a folder named 'distilled_skills_model'
 Copy the results of the skill clustering to the cluster value of skill_distill.py. file 
 ```shell
-python skill_cluster.py
+python skill_distill.py
 ```
