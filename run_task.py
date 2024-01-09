@@ -136,8 +136,8 @@ if __name__ == "__main__":
                                                      "noisy_duelingc51+per",
                                                      "rainbow"], default="noisy_dueling", help="Specify which type of DQN agent you want to train, default is DQN - baseline!")
     
-    parser.add_argument("-env", type=str, default="Hopper_hurdle-v3", help="Name of meta env")
-    parser.add_argument("--env_name", type=str, default="Hopper-v3",
+    parser.add_argument("-env", type=str, default="HalfCheetah_hurdle-v1", help="Name of meta env")
+    parser.add_argument("--env_name", type=str, default="HalfCheetah-v3",
                         help="Name of skill_env")
     parser.add_argument("-frames", type=int, default=int(2000000), help="Number of frames to train, default = 5 mio")
     parser.add_argument("-seed", type=int, default=222, help="Random seed to replicate training runs, default = 1")
@@ -213,7 +213,7 @@ if __name__ == "__main__":
     lower_level_agent = SACAgent(p_z=p_z, **params)
     logger = Logger(lower_level_agent, **params)
     logger.load_weights()
-    lower_level_agent.load()
+    #lower_level_agent.load()
 
 
     clusters =  {1: [0, 2, 4, 7, 8, 26, 28, 29, 39, 40, 45, 46], 11: [1], 9: [3], 17: [5, 9, 10, 11, 16, 20, 23, 34, 44], 6: [6], 14: [12, 13, 15, 19, 27, 35, 37, 47], 8: [14], 10: [17, 18, 24, 25, 48], 13: [21], 18: [22], 5: [30], 16: [31], 2: [32], 19: [33], 7: [36], 3: [38], 15: [41], 0: [42], 12: [43], 4: [49]}
