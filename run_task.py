@@ -136,8 +136,8 @@ if __name__ == "__main__":
                                                      "noisy_duelingc51+per",
                                                      "rainbow"], default="noisy_dueling", help="Specify which type of DQN agent you want to train, default is DQN - baseline!")
     
-    parser.add_argument("-env", type=str, default="HalfCheetah_hurdle-v1", help="Name of meta env")
-    parser.add_argument("--env_name", type=str, default="HalfCheetah-v3",
+    parser.add_argument("-env", type=str, default="Hopper_hurdle-v3", help="Name of meta env")
+    parser.add_argument("--env_name", type=str, default="Hopper-v3",
                         help="Name of skill_env")
     parser.add_argument("-frames", type=int, default=int(2000000), help="Number of frames to train, default = 5 mio")
     parser.add_argument("-seed", type=int, default=222, help="Random seed to replicate training runs, default = 1")
